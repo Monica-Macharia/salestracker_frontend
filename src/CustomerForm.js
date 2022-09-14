@@ -24,6 +24,11 @@ function CustomerForm({onAddCustomer}){
         })
         .then((r) => r.json())
         .then((newCustomer) => onAddCustomer(newCustomer));
+
+        setName('');
+        setLocation('');
+        setContact('');
+        setComment('');
     }
 
     return(

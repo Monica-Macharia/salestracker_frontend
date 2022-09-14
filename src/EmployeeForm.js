@@ -26,6 +26,11 @@ function EmployeeForm({onAddEmployee}){
         .then((r) => r.json())
         .then((newEmployee) => onAddEmployee(newEmployee));
 
+        setName('');
+        setLocation('');
+        setContact('');
+        setComment('');
+       
     }
     return(
 

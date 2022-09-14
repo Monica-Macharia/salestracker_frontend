@@ -27,6 +27,12 @@ function Form({onAddItem}){
     .then((r)=> r.json())
     .then((newData) => onAddItem(newData));
 
+
+    setName('');
+    setPrice('');
+    setStatus('');
+    setCustomer_id('');
+    setEmployee_id('');
     }
 
     return(
