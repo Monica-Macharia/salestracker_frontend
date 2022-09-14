@@ -14,7 +14,7 @@ function EmployeeForm({onAddEmployee}){
             contact: contact,
             comment: comment
         };
-        fetch("https://salestracker-backend.herokuapp.com/employees",{
+        fetch("http://localhost:9292/employees",{
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -6,7 +6,7 @@ function Customers(){
     const[customers, setCustomers] = useState([]);
 
     useEffect(()=>{
-        fetch("https://salestracker-backend.herokuapp.com/customers")
+        fetch("http://localhost:9292/customers")
         .then((r) => r.json())
         .then((customers) => setCustomers(customers));
     }, []);

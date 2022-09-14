@@ -6,7 +6,7 @@ function UpdatePrice({ task, onUpdateTask }) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        fetch(`https://salestracker-backend.herokuapp.com/tasks/${task.id}`, {
+        fetch(`http://localhost:9292/tasks/${task.id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

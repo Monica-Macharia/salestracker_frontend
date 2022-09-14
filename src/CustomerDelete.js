@@ -3,7 +3,7 @@ import React from 'react';
 function CustomerDelete({customer, onDeleteCustomer}){
 
     function handleDeleteClick(){
-        fetch(`https://salestracker-backend.herokuapp.com/customers/${customer.id}`, {
+        fetch(`http://localhost:9292/customers/${customer.id}`, {
             method: "DELETE",
           })
             .then((r) => r.json())

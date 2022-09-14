@@ -4,7 +4,7 @@ function TaskDelete({task, onDeleteTask}){
 
 
     function handleDelete(){
-        fetch(`https://salestracker-backend.herokuapp.com/tasks/${task.id}`,{
+        fetch(`http://localhost:9292/tasks/${task.id}`,{
             method: "DELETE",
 
         })

@@ -8,7 +8,7 @@ function Employees(){
     
 
 useEffect(()=>{
-        fetch("https://salestracker-backend.herokuapp.com/employees")
+        fetch("http://localhost:9292/employees")
         .then((r) => r.json())
         .then((employees) => setEmployees(employees));
     }, []);

@@ -7,7 +7,7 @@ function Tasks(){
     const[tasks, setTasks] = useState([]);
 
     useEffect(()=>{
-        fetch("https://salestracker-backend.herokuapp.com/tasks")
+        fetch("http://localhost:9292/tasks")
         .then((r) => r.json())
         .then((tasks) => setTasks(tasks));
     }, []);

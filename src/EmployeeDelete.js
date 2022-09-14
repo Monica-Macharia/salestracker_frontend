@@ -3,7 +3,7 @@ import React from 'react';
 function EmployeeDelete({employee, onDeleteEmployee}){
 
     function handleDelete(){
-        fetch(`https://salestracker-backend.herokuapp.com/employees/${employee.id}`, {
+        fetch(`http://localhost:9292/employees/${employee.id}`, {
             method: "DELETE",
 
         })

@@ -14,7 +14,7 @@ function CustomerForm({onAddCustomer}){
             contact: contact,
             comment: comment
         };
-        fetch("https://salestracker-backend.herokuapp.com/customers",{
+        fetch("http://localhost:9292/customers",{
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

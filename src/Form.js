@@ -16,7 +16,7 @@ function Form({onAddItem}){
         customer_id: customer_id,
         employee_id: employee_id
     };
-    fetch("https://salestracker-backend.herokuapp.com/tasks",{
+    fetch("http://localhost:9292/tasks",{
         method: "POST",
         headers: {
             "Content-Type": "application/json",
